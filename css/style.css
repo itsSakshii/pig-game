@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+background: rgb(8,0,0);
+background: linear-gradient(90deg, rgba(8,0,0,0.8683122907366072) 0%, rgba(208,213,35,1) 100%);
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+    height: 80vh;
+    width: 50vw;
+    background-color:rgba(8,0,0,0.4);
+    /* border-radius:5%; */
+    box-shadow: 20px 20px 50px -10px black;
+    display:flex;
+}
+.player{
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.75s;
+    padding: 3rem 0;
+
+
+}
+.name {
+    /* position: relative; */
+    font-weight:600;
+    font-size: 2rem;
+    text-align: center;
+ 
+    /* padding-bottom: 2rem; */
+}
+.pl {
+    font-size: 1.8rem;
+    font-weight: 300;
+    
+  
+}
+.t-score {
+    /* background-color: #c1bdbd; */
+    padding: 1rem 0;
+    width:15vw;
+    color: #ffff;
+    text-align: center;
+ 
+}
+.score {
+    font-size: 3rem;
+    font-weight: bold;
+    /* margin-bottom: auto; */
+    padding-top:3rem;
+   
+}
+ .active-player{
+    background-color: rgb(32, 129, 129);
+    
+}
+
+.active-player .c-score{
+    opacity: 1;
+}
+.c-score {
+    
+   
+    color: #fbf6f6;
+    width:15vw;
+    padding: 1rem 0;
+    text-align: center;
+    transition: all 0.75s;
+   
+}
+.game-c{
+    flex:20;
+    position: relative;
+  
+}
+
+.btn {
+    position: absolute; 
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    background: rgb(41,42,1);
+    background: linear-gradient(90deg, rgba(41,42,1,0.8683122907366072) 0%, rgba(215,245,4,1) 100%);
+    
+    border: none;
+    font-size:1rem;
+    cursor: pointer;
+    font-weight: 600;
+  
+    
+    height: 6vh;
+    width:7vw;
+    border-radius: 10px;
+}           
+   
+   
+.btn-new {
+    top: 4rem;
+}
+ 
+.btn-roll {
+    top: 30rem;
+}
+ 
+.btn-hold {
+    top: 35rem;
+}
+ 
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 18rem;
+    transform: translate(-50%,-50%);
+    height: 8vh;
+    
+}
+.winner-player{
+    background-color:black;
+}
+.hidden{
+    display:none;
+}
+
+ 
